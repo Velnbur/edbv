@@ -1,0 +1,28 @@
+[workspace]
+members = ["xtask", "."]
+
+[workspace.dependencies]
+leveldb = { version = "3.0.2", package = "rusty-leveldb", default-features = false, features = ["fs"] }
+miette = { version = "7.4.0", features = ["fancy"] }
+clap = { version = "4.5.23", features = ["derive"] }
+json = "0.12.4"
+cbor = "0.4.1"
+
+[package]
+name = "edbv"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap.workspace = true
+json.workspace = true
+cbor.workspace = true
+clap-verbosity-flag = "3.0.2"
+crossterm = "0.28.1"
+env_logger = "0.11.5"
+hex = "0.4.3"
+leveldb.workspace = true
+log = "0.4.22"
+miette.workspace = true
+ratatui = "0.29.0"
+rustc-serialize = "0.3.25"

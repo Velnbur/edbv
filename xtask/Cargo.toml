@@ -1,0 +1,11 @@
+[package]
+name = "xtask"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+leveldb.workspace = true
+miette.workspace = true
+clap.workspace = true
+json.workspace = true
+cbor.workspace = true
